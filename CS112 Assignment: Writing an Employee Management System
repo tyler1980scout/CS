@@ -1,0 +1,112 @@
+/*
+This code is made for the study.com assignment Computer Science 112: Programming in C++ 
+
+It will enable an employee to login, and based on their profile credentials, see different menus depending on their position
+
+***From assignment itself below:***
+***********************************
+-For this assignment, you will write a program that keeps track of employees at a company.
+-Three types of users can access the system: Human Resources, Management, and General Employees. 
+  -A Human Resources user will be able to add, view, search, modify, and delete    employees. 
+  -A Management user can only search and view employees. 
+  -A General Employee user can only view his or her own file. Employee files       will have at least the employee's name and numeric user id.
+
+Your program will implement a management information system:
+-The minimum requirements of the system are: implement a base employee class that will be defined for each employee type or function, implement a log-in feature, and the login will determine what functions are accessible to the employee.
+-The program will be interactive. At a minimum, a log-in screen and menu screen will be used. Input should be validated for correct login credentials.
+-Functions and classes should be used where appropriate to produce readable, reusable code. Library functions and user-defined functions should be used where appropriate.
+-The program will be well-commented/documented, including a comment block at the top of the document (document header comment) as well as line comments
+*/
+  
+#include <iostream>
+
+using namespace std;
+
+int empID;
+string empPassword;
+string empName;
+int empType;
+
+
+class employee
+{
+	int empID;
+  string empPassword;
+	string empName;
+	int empType;
+
+	public:
+
+};
+
+
+
+
+
+
+int main() {
+  
+//Below is the welcome and login screen for access
+
+cout << "Hello and Welcome to Computer Science 112 World!\n\n";
+cout << "This is the Management System for our company CS112!\n\n";
+cout << "Please login below with your credentials\n";
+cout << "Enter employee ID: ";
+cin >> empID;
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+}
+
+
+
+
+/*
+below code is to help with login screen
+
+    string userName;
+    string userPassword;
+    int loginAttempt = 0;
+
+    while (loginAttempt < 5)
+    {
+        cout << "Please enter your user name: ";
+        cin >> userName;
+        cout << "Please enter your user password: ";
+        cin >> userPassword;
+
+        if (userName == "greg" && userPassword == "dunn")
+        {
+            cout << "Welcome Greg!\n";
+            break;
+        }
+        else if (userName == "patrick" && userPassword == "dunn")
+        {
+            cout << "Welcome Patrick!\n";
+            break;
+        }
+        else
+        {
+            cout << "Invalid login attempt. Please try again.\n" << '\n';
+            loginAttempt++;
+        }
+    }
+    if (loginAttempt == 5)
+    {
+            cout << "Too many login attempts! The program will now terminate.";
+            return 0;
+    }
+
+    cout << "Thank you for logging in.\n";
+*/
